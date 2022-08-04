@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(199, 199, 199);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(37, 35, 35);
+    box-shadow: 0 0 10px black;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    text-transform: lowercase;
+    margin: 10px;
+    letter-spacing: -2px;
+}
+
+.logo span:first-child{
+    color: blueviolet;
+}
+
+.logo span:last-child{
+    font-size: 14px;
+    letter-spacing: normal;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    position: relative;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 15px;
+    transition: 0.1s;
+    display: block;
+}
+
+.menu li:hover{
+    background-color: blueviolet;
+}
+
+.menu li:hover > .submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: 0;
+    background-color: blueviolet;
+    min-width: 110%;
+    text-decoration: none;
+    list-style: none;
+}
+
+.submenu li a:hover{
+    background-color: rgb(91, 31, 148);
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu li .submenu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+}
